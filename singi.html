@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asha & Surendra Wedding Invitation</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8f9fa;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+
+        .invitation-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #ff6f61;
+            margin-bottom: 10px;
+            animation: slideIn 1s ease-out;
+        }
+
+        header p {
+            font-size: 1.5em;
+            font-weight: bold;
+            animation: slideIn 1s ease-out;
+        }
+
+        .details {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+
+        .details div {
+            text-align: center;
+        }
+
+        .details h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            color: #ff6f61;
+        }
+
+        .details p {
+            font-size: 1.2em;
+        }
+
+        .countdown {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .countdown h3 {
+            font-size: 1.5em;
+            color: #ff6f61;
+        }
+
+        #countdown {
+            font-size: 2em;
+            font-weight: bold;
+            color: #ff6347;
+            margin-top: 10px;
+        }
+
+        .message {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Heart Background Animation */
+        @keyframes backgroundAnimation {
+            0% {
+                background-color: #f8f9fa;
+            }
+
+            50% {
+                background-color: #ff6347;
+            }
+
+            100% {
+                background-color: #ff6f61;
+            }
+        }
+
+        /* FadeIn Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* SlideIn Animation */
+        @keyframes slideIn {
+            0% {
+                transform: translateY(50px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* Love Symbol Heart Background Effect */
+        .heart {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 5em;
+            color: rgba(255, 99, 71, 0.6);
+            animation: rotateHeart 10s infinite linear;
+            z-index: 0;
+        }
+
+        .heart-symbol {
+            position: absolute;
+            color: rgba(255, 99, 71, 0.5);
+            font-size: 3em;
+            animation: floatingHearts 5s infinite ease-in-out;
+        }
+
+        @keyframes rotateHeart {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        @keyframes floatingHearts {
+            0% {
+                transform: scale(1) translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: scale(1.2) translateY(-100px) rotate(90deg);
+            }
+
+            100% {
+                transform: scale(1) translateY(0) rotate(180deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Heart Floating Background -->
+    <div class="heart-symbol" style="top: 20%; left: 10%; animation-delay: 0s;">&#10084;</div>
+    <div class="heart-symbol" style="top: 30%; left: 60%; animation-delay: 1s;">&#10084;</div>
+    <div class="heart-symbol" style="top: 50%; left: 30%; animation-delay: 2s;">&#10084;</div>
+    <div class="heart-symbol" style="top: 70%; left: 80%; animation-delay: 3s;">&#10084;</div>
+    <div class="heart-symbol" style="top: 40%; left: 90%; animation-delay: 4s;">&#10084;</div>
+    <div class="heart-symbol" style="top: 60%; left: 40%; animation-delay: 5s;">&#10084;</div>
+
+    <!-- Wedding Invitation Content -->
+    <div class="invitation-container">
+        <header>
+            <h1>You're Invited to the Wedding</h1>
+            <p>Asha (B.E) & Surendra (Janasena)</p>
+        </header>
+
+        <section class="details">
+            <div class="date">
+                <h3>Wedding Date & Time</h3>
+                <p>December 6, 2024</p>
+                <p>10:00 AM onwards</p>
+            </div>
+
+            <div class="venue">
+                <h3>Wedding Venue</h3>
+                <p>Srikakulam,India</p>
+            </div>
+        </section>
+
+        <section class="details">
+            <div class="event">
+                <h3>Sumuhurtham</h3>
+                <p>Friday, December 6, 2024</p>
+                <p>04:30 AM (Night)</p>
+                <p>Venue: Bridegroom's Residence</p>
+                <p>Tamara Colony, Pedda Seedhi Village, Patapatnam Mandal</p>
+            </div>
+
+            <div class="event">
+                <h3>Vindhu Vinodam</h3>
+                <p>December 5, 2024</p>
+                <p>12:30 PM onwards</p>
+                <p>Venue: Bridegroom's Residence, Tamara Colony, Pedda Seedhi, Village</p>
+            </div>
+
+            <div class="event">
+                <h3>Dinner</h3>
+                <p>December 5, 2024</p>
+                <p>07:30 PM onwards</p>
+                <p>Venue: Turakanaiduvalasa, Jiyyammavalasa Mandal, Parvatipuram District</p>
+            </div>
+        </section>
+
+        <section class="countdown">
+            <h3>Countdown to Wedding Day</h3>
+            <div id="countdown"></div>
+        </section>
+
+        <section class="message">
+            <p>We are excited to share our special day with you! Come and celebrate the union of Asha & Surendra!</p>
+        </section>
+
+        <footer>
+            <p>We look forward to your presence and blessings!</p>
+        </footer>
+    </div>
+
+    <script>
+        // Wedding Countdown Timer
+        const weddingDate = new Date("December 6, 2024 10:00:00").getTime();
+
+        const countdownElement = document.getElementById("countdown");
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const timeRemaining = weddingDate - now;
+
+            if (timeRemaining <= 0) {
+                countdownElement.innerHTML = "The wedding has arrived!";
+                clearInterval(interval);
+                return;
+            }
+
+            const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+
+        const interval = setInterval(updateCountdown, 1000);
+    </script>
+</body>
+
+</html>
